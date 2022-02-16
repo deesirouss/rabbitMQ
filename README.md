@@ -20,24 +20,24 @@ It will consist of two programs
 
 ### Some Useful commands
 #### Start rabbitmq-server
--> sudo service rabbitmq-server start
--> sudo service rabbitmq-server on
+> sudo service rabbitmq-server start
+> sudo service rabbitmq-server on
 
 #### Status  of rabbitmq-server
--> sudo rabbitmqctl status
+> sudo rabbitmqctl status
 
 #### Installing pika
--> python3 -m pip install pika --upgrade
+> python3 -m pip install pika --upgrade
 
 #### After sending messege, list queues
--> sudo rabbitmqctl list_queues
--> sudo rabbitmqctl list_queues name messages_ready messages_unacknowledged
+> sudo rabbitmqctl list_queues
+> sudo rabbitmqctl list_queues name messages_ready messages_unacknowledged
 
 #### To list the exchanges on the server you can run the ever useful rabbitmqctl:
--> sudo rabbitmqctl list_exchanges
+> sudo rabbitmqctl list_exchanges
 
 #### You can list existing bindings using, you guessed it,
--> sudo rabbitmqctl list_bindings
+> sudo rabbitmqctl list_bindings
 
 #### If you want to save logs to a file, just open a console and type:
--> python receive_logs.py > logs_from_rabbit.log
+> python receive_logs.py > logs_from_rabbit.log
